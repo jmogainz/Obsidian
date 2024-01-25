@@ -1,0 +1,5 @@
+Personal github:
+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
+
+Gitlab:
+glpat-fbnduXQssxesoxcansz8

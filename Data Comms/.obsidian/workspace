@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "68acdbe9e8976db3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4237935b642c2ed",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Final Exam Review.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "461144db017455ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "903a3ff04aafe45c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aeffb3c0517339ef",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a3b0d1d1295d6934",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b3f9deb997591029",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9c983bb2993126a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d6bbc339cefcd50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Final Exam Review.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f4237935b642c2ed",
+  "lastOpenFiles": [
+    "Final Exam Review.md",
+    "Midterm Exam Prep.md",
+    "Pasted image 20220504233705.png",
+    "Pasted image 20220505000920.png"
+  ]
+}

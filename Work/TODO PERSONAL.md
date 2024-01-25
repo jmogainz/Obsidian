@@ -1,0 +1,2 @@
+- [ ] add debug logging
+- [ ] break apart refactor

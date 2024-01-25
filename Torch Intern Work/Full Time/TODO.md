@@ -1,0 +1,34 @@
+- [x] Benefits Enrollment New Hire Form
+- [x] Mouse software
+- [x] Vscode
+- [x] Visual Studio
+- [x] Git
+- [x] Install Anaconda
+- [x] Put in ticket for ssd
+- [x] Put in code fix for static reals
+- [x] Learn how to parallelize batches across multiple gpus
+- [x] Can we add automation to forecasting
+- [x] Figure out how to properly install mamba
+- [x] Reset passwords and sign into admin account
+- [ ] 
+- [ ] Read education stuff
+- [ ] Look through forecasting for issues (clean up)
+- [ ] RL chatgpt
+- [ ] Perhaps try wayland - maybe can figure out gnome issue
+- [ ] Implement changes to forecasting
+- [x] Make sure code fix for data_id vs group_id
+- [ ] Look into raytune/optuna
+- [x] Look at pytorch 2.0 compile stuff
+- [ ] Look at the reenforcement learning repo
+- [ ] Possibly correct chandlers name as beneficiary
+- [x] Email benefits people about life insurance
+	- [ ] Look out for change in value
+- [ ] Check on ssd ticket status
+- [ ] Ask Ashley about email signature
+- [ ] Study code and watch videos from daniel
+- [x] Study transformers
+- [x] Research gpu specs
+- [x] Introduce in CRAP meeting
+- [ ] Goals in Deltek
+- [x] SHARP training
+- [x] Ask about masters degree money

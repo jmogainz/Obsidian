@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "5a27152324889cf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "83f39f7d30bcc2d7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Interviewing.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70db561abe74d096",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5e12ef34d2f1e85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e54089448cab5271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "55bfe780a6ea656e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "49eea86cdd0ed95a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7535ccde9c91c3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af73e734eb8cfe16",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Interviewing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "83f39f7d30bcc2d7",
+  "lastOpenFiles": [
+    "General/C++.md",
+    "General/temp.md",
+    "AI/Neural Network Notes.md",
+    "General/Working with applications.md",
+    "General/Web.md",
+    "General/OS.md",
+    "General/Git.md",
+    "AI/DMC_2022.md",
+    "Untitled 2.md",
+    "Untitled 1.md"
+  ]
+}

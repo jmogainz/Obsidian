@@ -1,0 +1,290 @@
+{
+  "main": {
+    "id": "ee27c5c58ab0e722",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6b96aa061e8ee2c",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "7080add7be56701a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gitlab pat.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eff57691649d8aa6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git reset credential hack.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4159e9a80489c180",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Environment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78b16bd6c3219837",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c39eeb91b7f46e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gitlab pat.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "ea5597a6ab882db7",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "3a20dcdd01482d87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C++ .h beefed Class Template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ecd95e8d94d55b44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dec3b4fea4cce9f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO PERSONAL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e0208014f5e70712",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb34331105fba3de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71482af718b64ae1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6203161a8992ae5d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "docker syst",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6db8026bb3977d49",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "219d8739547ca89d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8458434e3edfb8a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a13fd4004262af1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODO.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a0fbd2095bd23464",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TODO.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb16acf35ca8c1a9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c5778801640d3e7a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TODO.md"
+              }
+            }
+          },
+          {
+            "id": "7e4fb31301bec931",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ecd95e8d94d55b44",
+  "lastOpenFiles": [
+    "Gitlab pat.md",
+    "TODO.md",
+    "gnome enable animations.md",
+    "TODO.md.partial",
+    "TODO PERSONAL.md",
+    "Docker ServiceAllocator Using.md",
+    "Chase Collage App.md.partial",
+    "Chase Collage App.md",
+    "Base to derived.md",
+    "Observation Grammar.md",
+    "C++ .h small template.md",
+    "C++ .h beefed Class Template.md",
+    "C++ .cpp Class Template.md",
+    "Launch.json C++.md",
+    "RL BC Lib Design Solutions.md",
+    "Run Setup For RL Pipeline.md",
+    "Setcap.md",
+    "Spin up containers RL Env Considerations.md",
+    "TFT Warp and Trajectory Forecasting.md",
+    "Torch Forticlient VPN Info.md",
+    "Untitled.canvas",
+    "vscode launch.json file.md",
+    "vscode c_cpp_properties.json file.md",
+    "Environment.md",
+    "git reset credential hack.md",
+    "Disk Usage Commands.md",
+    "AFSIM BUILD REQUIREMENTS.md",
+    "2023-11-30.md",
+    "RL Vectorized Env Containerization.md",
+    "C++ .cpp Class Template.md.partial",
+    "Full Time"
+  ]
+}

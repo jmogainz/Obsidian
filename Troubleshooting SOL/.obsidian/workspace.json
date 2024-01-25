@@ -1,0 +1,125 @@
+{
+  "main": {
+    "id": "5a27152324889cf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce333fcbbe11b628",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f885c217f18e019",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70db561abe74d096",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5e12ef34d2f1e85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e54089448cab5271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "55bfe780a6ea656e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bbe7601a833ca37a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "49eea86cdd0ed95a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7535ccde9c91c3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af73e734eb8cfe16",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "1f885c217f18e019",
+  "lastOpenFiles": [
+    "Interviewing.md",
+    "Temp.md",
+    "LOTUS.md",
+    "General/Linux.md",
+    "General/OS.md",
+    "General/ROS.md",
+    "General/temp.md",
+    "General/Git.md",
+    "General/C++.md",
+    "General/Singularity.md",
+    "General/Web.md",
+    "General/Working with applications.md"
+  ]
+}

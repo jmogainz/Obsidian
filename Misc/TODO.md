@@ -1,0 +1,56 @@
+- [x] Syllabus Quiz Walking and Jogging
+- [x] Journal Entry Next Friday
+- [x] Pick up Onn wireless kb
+- [ ] Study next.js
+- [x] PAR-Q assignment
+- [x] Finish resume
+- [ ] Apply to jobs
+- [x] Dissection proposals due 31st
+- [x] Pitch deck
+- [x] Web dev assignment due 4th by 3pm
+- [ ] Start senior design website
+- [x] Ask Jarrod for RSA to look at costpoint
+- [x] Order Lylas dogfood
+- [x] Downgrade membership at club
+- [x] Possibly cancel SAC
+- [x] Verify with Joe that membership is cancelled
+- [x] Journal Entry 2
+- [x] Record pitch deck video
+- [ ] Study path tracking algo
+- [x] Lab 1
+- [x] Board contract
+- [ ] Web dev hw 2
+- [x] Present dissections tuesday
+- [x] Journal 3
+- [x] Check to see if kelly got my email
+- [x] Chandlers presents
+- [ ] Pick up chandlers presents
+- [x] Schedule simparco trio friday
+- [ ] Vet
+	- [ ] Anal glands
+	- [ ] Check for heart worms
+	- [ ] Trim nails
+- [x] Study embedded practice test, study slides, read book
+- [x] Journal 4
+- [x] Take Data Science Coding Assessment
+- [x] Journal 5
+- [x] Behavorial Assessment
+- [ ] 9:30 Oct 7 Lyla Vet
+- [ ] Webpage for senior desing
+- [ ] Study ROS
+- [ ] Workon equation AI
+- [x] Retake embedded test
+- [ ] Possibly submit embedded lab 2
+- [ ] Look into submitting site key code
+	- [ ] And slowing everything down making it more real
+- [ ] Delete all ros
+- [ ] Install ros and setup control package
+- [ ] Turn off animations
+- [ ] Install onedrive
+- [ ] Peer review
+- [ ] Wandj journal 
+- [ ] Web dev hw 6
+- [ ] Lab 7 embedded
+- [ ] Email medi about rtk remote access
+- [ ] Ros navigation
+

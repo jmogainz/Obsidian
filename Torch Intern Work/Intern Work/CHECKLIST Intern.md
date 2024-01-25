@@ -1,0 +1,29 @@
+- [x] Feature extraction
+- [x] Multithreading with queue for saving to disk
+- [x] Preprocessing data
+- [x] Training models
+- [x] Helped daniel find bugs with logical time
+- [x] Added mq9r to config files for classification
+- [x] change color of mshorad so it is not attacked by enemies
+- [x] Made two separate servers for prediction and classification, tested them live with guardian scenario
+	- [x] Implemented a bundled method for yaml and json parsing
+	- [x] Made a script to create executable for the servers
+- [x] Recorded beam data and added repeatable method to do so to guardian
+- [x] Researched afsim docs
+- [x] added configurability for mortar launch time
+	- [x] put up merge request
+- [x] Ask Jason about goodhire email
+- [x] classificationdataanalyzer app
+- [x] mq9r flight paths need to be ironed out
+	- [x] new data needs to be recorded
+- [x] train all models with correct mq9r and other flight paths
+- [x] Grafana graphing
+	- [x] Get base graph layed out
+	- [x] Make sure it all looks good
+	- [x] Do something with grafana js maker script
+- [x] Document all scripts and tools made
+- [x] Add Bill's suggestions into data analyzer apps
+- [ ] Wrap up code, test it, make sure it is robust
+- [ ] Try to improve the prediction graph as good as can
+- [ ] Sign out of onedrive before you leave
+- [ ] Delete Imperium dei, and wipe out trash can

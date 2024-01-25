@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "55a517e66036a776",
+    "type": "split",
+    "children": [
+      {
+        "id": "b976b6887e6612d3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Mid Semester Pres.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d16001b4c48fbc16",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5641034c4d29652",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e570cdcd49bcfd7f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e70ea95ed0aa438e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a04b345d78bd8a15",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d3968cc24de5eb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b47e604a0d278e9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c664f18171cd4bf9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Mid Semester Pres.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f155d0542a8649ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Mid Semester Pres.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fe01687d537eb397",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4ed4fd92b2e31d61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Mid Semester Pres.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b976b6887e6612d3",
+  "lastOpenFiles": [
+    "Services/ControlService.md",
+    "Mid Semester Pres.md",
+    "Pure Pursuit/Pure Pursuit.md",
+    "Toolbox/LocalMessageReceiver.md",
+    "Toolbox/Message.md",
+    "Services/AIAOService.md",
+    "Services/RemoteService.md",
+    "Blurb for presentation.md",
+    "Toolbox/LorawanMessageReceiver.md",
+    "Pure Pursuit/Personal Implementation Notes.md"
+  ]
+}

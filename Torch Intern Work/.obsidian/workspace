@@ -1,0 +1,130 @@
+{
+  "main": {
+    "id": "268049acdd2798dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "06164065196630c3",
+        "type": "leaf",
+        "dimension": 32.459016393442624,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "CHECKLIST.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "3f7799c5c287af79",
+        "type": "leaf",
+        "dimension": 33.55191256830601,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Guardian_DL/DL Classification.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "2226c3cf0fd710a4",
+        "type": "leaf",
+        "dimension": 33.98907103825137,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Guardian/Code Changes, Detailed.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cba687791d1701b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a69776c448734cb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2544ef576b70211b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "54a5f09fde2826a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cfdffbc183bc1845",
+    "type": "split",
+    "children": [
+      {
+        "id": "0310df0b6156bd0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fce5d9c90edc1a57",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CHECKLIST.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "06164065196630c3",
+  "lastOpenFiles": [
+    "Guardian/Code Changes, Detailed.md",
+    "CHECKLIST.md",
+    "June 22.md",
+    "Guardian_DL/DL Notes Python.md",
+    "Guardian_DL/DL Classification.md",
+    "Guardian/Classification OFFLINE Data Analyzer.md",
+    "Guardian_ML/KNN.md",
+    "Guardian_ML/GB.md",
+    "Guardian_ML/Random Forest.md",
+    "June-20.md"
+  ]
+}

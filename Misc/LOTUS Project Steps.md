@@ -1,0 +1,14 @@
+- [x] Is it possible to get wheel encoding info from our esc/motor
+	Get RPM from VESC
+- [x] Order IMU and configure it using tut online (ros package for it)
+- [x] Setup odometry for lotus robot using IMU
+- [x] 1. Study GPS
+- [x] 1.5. Implement Pure Pursuit
+- [x] 2. Implement Waypoint follower in software
+- [x] 2.25 Implement Waypoint follower in software without world or map or lidar sensors
+- [ ] Test waypoint following with different odom topics
+- [ ] 2.5 Hook up GPS
+- [ ] 3. Do it with ackermann urdf
+- [ ] 4. Test VESC working during simulated environment
+- [ ] 5. Hook up IMU and VESC to localization
+- [ ] 6. Check for Wheel Encoder

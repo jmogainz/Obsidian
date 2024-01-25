@@ -1,0 +1,86 @@
+- [x] Remove remote
+- [x] Start on c++ batchtest creator
+- [x] Refactor worker to environment
+- [x] Fix sa main
+- [x] Fix austin code
+- [x] Fix sa allocation code
+- [x] Refactor to afsim comms config generator
+- [x] Make sure worker and env index are 0 based
+- [x] Put in vacation hours requests
+- [x] Fix batchcontroller.cpp, add logging
+- [ ] Creation of spaces in c++, get with samuel
+	- [x] Fundamental
+		- [x] MultiBinary
+		- [x] MultiDiscrete
+	- [ ] Composite
+		- [x] Dict
+		- [ ] Tuple
+		- [ ] Sequence
+- [x] Test onnx with ppo
+- [ ] Test onnx with box space ppo
+- [ ] Test onnx with dqn
+- [x] Change from std::any to variant
+- [x] Write tests for discrete
+- [x] Write tests for box
+- [x] Write tests for Dict
+- [x] Set shape for all spaces
+- [x] Look into onnx runtime building as submodule
+	- [ ] Do we want to statically link specific staic onnxruntime libs to our project? Or do we want to dynamically link the entire onnxruntime shared lib to our project?
+- [x] Look into debugging into pybind code linux vsc
+	- [x] Debug build in setup.py tell daniel that we need this option for our setup.py !!!!!!!!!!!!!!!!!!!!
+- [x] Look into debugging into pybind code windows vsc
+- [x] Look into debugging into pybind code clion
+- [x] Add option to use vector with box input
+- [x] Check on reording of setup file to use venv1
+- [x] Clean up disk
+- [x] Check ram and cpu usage
+- [x] Push up changes to box check high and low
+- [x] Push up changes to service allocator for linux ./
+- [x] Get in leave request
+- [x] Burn holiday hours and comp time
+- [ ] Potentially add with report time to grammar
+	- [ ] Potentially use vehicleId, platformName, disId
+- [ ] cursor jump setting
+- [x] refactor into smaller functions
+- [x] create callbacks at observationhandler initialization
+- [x] Add start param to multidiscrete
+- [ ] consider manager history count
+- [x] Figure out compiler warning bombs (xtensor, pybind11, boost)
+- [ ] Remove long long int....change uot for uint16
+- [ ] Tell daniel about  problem with vscode debugger?
+	- [ ] vscode debugger appears to be ignoring the runpath completely on all my wrapper modules (so finding incorrect libstdc++ so)
+- [ ] Add dynamic loading of IObservationHandlers
+- [ ] Add dynamic loading for handlers and thus extractors
+- [x] REFACTOR 
+	- [x] Validate sensors fuction can split up?
+- [ ] Verify working on linux service allocator
+- [x] Check with potentially using better naming to differentiate between configuration and simulation
+- [ ] Check with potentially not making sensordataobserver inherited from platform data observer
+- [ ] Make instruction an optional field in space params
+- [x] Change namespace of new library for observations with grammar
+- [x] Track repo reading is threadsafe (locks on all read functions as well as modification functions)
+- [x] Need locks on my maps
+- [x] Make sure sam sorted the track_ids based on numeric
+- [ ] Take off I on factory for interface factories
+- [x] Could potentially make factory cpp implemented
+- [ ] Think about each layer of observation forming and making the sure the repos are not updated during....
+- [ ] Consider storing snapshot of history up front when get observation sample so there is duplicate calls or changing results to getHIstory for platforms and sensors
+- [ ] Move all factories to cpp
+- [ ] Reduce header size as much as possible
+- [ ] Custom exception handling
+- [x] Add grammar instructions for all handling
+	- [x] Update configuration object
+	- [x] Update extractors to use new stuff
+	- [ ] Fix namespace for grammarbased?
+- [x] Find a better place to put enum to string conversion
+- [ ] Add sorting for track_ids
+- [x] Few pr in codem
+- [ ] Possibly hide c++ gym space constructors
+- [ ] Fix observation testing to be more legit
+- [ ] Self eval form due 26
+	- [ ] UPDATE all performance stuff in deltek
+- [x] See if daniel got paid out
+- [ ] Comment header file methods
+- [ ] View payroll checks and make sure they look good
+- [ ] Guess the stock price
+

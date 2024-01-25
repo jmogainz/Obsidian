@@ -1,0 +1,4 @@
+- Take all befores and then take all afters
+- Try to make the befores look exactly like the afters
+- Including unique features in each set is preferrable
+- 

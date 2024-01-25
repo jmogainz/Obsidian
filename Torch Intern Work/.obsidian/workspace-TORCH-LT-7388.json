@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "268049acdd2798dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ad0ea41ffe12f68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06164065196630c3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20220623134813.png"
+              }
+            }
+          },
+          {
+            "id": "32f5754d1393dae9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cba687791d1701b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a69776c448734cb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2544ef576b70211b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54a5f09fde2826a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "pasted image",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "adb1d1ce9e395435",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cfdffbc183bc1845",
+    "type": "split",
+    "children": [
+      {
+        "id": "0310df0b6156bd0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fce5d9c90edc1a57",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pasted image 20220623134813.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "06164065196630c3",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Intern Work/Pasted image 20220628141316.png",
+    "Pasted image 20220623134813.png",
+    "Guardian_DL/DL Notes Python.md",
+    "Guardian_DL/DL Classification.md",
+    "Intern Work/5-24.md",
+    "Intern Work",
+    "Full Time/TODO.md",
+    "Intern Work/6-7 Work.md",
+    "Intern Work/CHECKLIST Intern.md",
+    "Full Time",
+    "Guardian/Code Changes, Detailed.md",
+    "Intern Work/June 22.md",
+    "Guardian/Classification OFFLINE Data Analyzer.md",
+    "Guardian_ML/KNN.md",
+    "Guardian_ML/GB.md",
+    "Guardian_ML/Random Forest.md",
+    "Intern Work/June-20.md"
+  ]
+}

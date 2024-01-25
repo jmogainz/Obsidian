@@ -1,0 +1,3 @@
+- This is the central component of the L.O.T.U.S. UGV design. It functions as the brain of the UGV and its primary job is to collect data from the connected sensors, process it, and use what is learns to guide the vehicle to the destination safely. It interfaces with the GPS/RTK module, Lorawan modem, and the esc.    
+
+- Our primary control software used for navigation, communication, and vehicle control is ROS, short for ROBOT OPERATING SYSTEM, this is an open-source meta-operating system specifically designed for robotics. It primarily runs on python and c++, and we will be using its base functionality in conjunciton with our own code to reach th
