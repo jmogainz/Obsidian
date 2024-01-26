@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software Architecture A1-imperium-dei-2.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software Architecture A1-imperium-dei-2.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software Architecture A1-imperium-dei-2.md",
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software Architecture A1-imperium-dei-2.md"
+                "file": "TODO.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "e5662ec925382c76",
   "lastOpenFiles": [
+    "Gitlab pat.md",
+    "Software Architecture A1-imperium-dei-2.md",
     "Software Architecture A1.md",
     "vscode c_cpp_properties.json file.md",
     "Software Architecture A1.md.partial",
@@ -183,12 +185,10 @@
     "Pasted image 20240125043617.png",
     "Pasted image 20240125043617.png.partial",
     "Pasted image 20240125041337.png",
-    "Software Architecture A1-imperium-dei-2.md",
     "Software Architecture A1-imperium-dei-2-2.md",
     "TODO.md",
     "PlantUML.md",
     "UML Diagrams.md",
-    "Gitlab pat.md",
     "Environment.md",
     "git reset credential hack.md",
     "TODO PERSONAL.md",
