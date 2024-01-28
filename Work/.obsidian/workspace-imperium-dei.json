@@ -4,77 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "b6b96aa061e8ee2c",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "7080add7be56701a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gitlab pat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eff57691649d8aa6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "git reset credential hack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4159e9a80489c180",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Environment.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "78b16bd6c3219837",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c39eeb91b7f46e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gitlab pat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
         "id": "ea5597a6ab882db7",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "3a20dcdd01482d87",
@@ -82,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++ .h beefed Class Template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ecd95e8d94d55b44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dec3b4fea4cce9f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO PERSONAL.md",
+                "file": "UML Diagrams.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker syst",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -163,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -180,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "UML Diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "UML Diagrams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "UML Diagrams.md"
               }
             }
           },
@@ -253,20 +159,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ecd95e8d94d55b44",
+  "active": "3a20dcdd01482d87",
   "lastOpenFiles": [
+    "Pasted image 20240115143949.png",
+    "Pasted image 20240115142824.png",
+    "Pasted image 20240115142430.png",
+    "Environment.md",
     "Gitlab pat.md",
+    "UML Diagrams.md",
     "TODO.md",
-    "gnome enable animations.md",
-    "TODO.md.partial",
+    "git reset credential hack.md",
+    "C++ .h beefed Class Template.md",
+    "Untitled.canvas",
     "TODO PERSONAL.md",
+    "TODO.md.partial",
     "Docker ServiceAllocator Using.md",
     "Chase Collage App.md.partial",
     "Chase Collage App.md",
     "Base to derived.md",
     "Observation Grammar.md",
     "C++ .h small template.md",
-    "C++ .h beefed Class Template.md",
     "C++ .cpp Class Template.md",
     "Launch.json C++.md",
     "RL BC Lib Design Solutions.md",
@@ -275,15 +187,11 @@
     "Spin up containers RL Env Considerations.md",
     "TFT Warp and Trajectory Forecasting.md",
     "Torch Forticlient VPN Info.md",
-    "Untitled.canvas",
     "vscode launch.json file.md",
     "vscode c_cpp_properties.json file.md",
-    "Environment.md",
-    "git reset credential hack.md",
     "Disk Usage Commands.md",
     "AFSIM BUILD REQUIREMENTS.md",
     "2023-11-30.md",
-    "RL Vectorized Env Containerization.md",
     "C++ .cpp Class Template.md.partial",
     "Full Time"
   ]
