@@ -76,11 +76,17 @@
 - [ ] Add sorting for track_ids
 - [x] Few pr in codem
 - [ ] Possibly hide c++ gym space constructors
-- [ ] Fix observation testing to be more legit
-- [ ] Self eval form due 26
+- [x] Fix observation testing to be more legit
+- [x] Self eval form due 26
 	- [ ] UPDATE all performance stuff in deltek
 - [x] See if daniel got paid out
 - [ ] Comment header file methods
-- [ ] View payroll checks and make sure they look good
-- [ ] Guess the stock price
-
+- [x] View payroll checks and make sure they look good
+- [ ] IDataExtractorTests
+- [ ] Config File Builder Tests
+- [ ] ObservationDataRepo tests
+- [x] GrammarInstructionParsingTests
+- [ ] GetObservation Full Tests
+- [ ] Add structs to uml
+- [ ] Gov trainings
+- [ ] Goals and crap in deltek
