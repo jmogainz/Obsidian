@@ -1,6 +1,5 @@
-Personal github:
-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
-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
+Personal github imperium-dei:
+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
 
 Gitlab:
 glpat-fbnduXQssxesoxcansz8
