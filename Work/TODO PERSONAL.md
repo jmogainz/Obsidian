@@ -1,2 +1,1 @@
-- [ ] add debug logging
-- [ ] break apart refactor
+- [ ] Visualize static cast operation
