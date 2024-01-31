@@ -49,7 +49,7 @@
 - [ ] Remove long long int....change uot for uint16
 - [ ] Tell daniel about  problem with vscode debugger?
 	- [ ] vscode debugger appears to be ignoring the runpath completely on all my wrapper modules (so finding incorrect libstdc++ so)
-- [ ] Add dynamic loading of IObservationHandlers
+- [x] Add dynamic loading of IObservationHandlers
 - [ ] Add dynamic loading for handlers and thus extractors
 - [x] REFACTOR 
 	- [x] Validate sensors fuction can split up?
@@ -90,3 +90,5 @@
 - [ ] Add structs to uml
 - [ ] Gov trainings
 - [ ] Goals and crap in deltek
+- [ ] Prepare for CRAP hosting
+- [ ] Build afsim with matts plugin and try to run pipeline again
