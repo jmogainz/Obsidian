@@ -1,6 +1,12 @@
 `skinparam linetype polyline`
  `skinparam linetype ortho`
  `skinparam classAttributeIconSize 0`
+ `set separator none` = disable auto namespace creation
+ `skinparam groupInheritance 0`
+`together`
+`group`
+`-[hidden]->`
+`diamond`
 
 Advanced
 Pure Abstract or Interface
@@ -27,6 +33,15 @@ Multi-Inheritance vs Composition Technique
 Constraints or properites {}
 - **Stereotype Approach**: This is more formal and is particularly useful if you want to establish a clear, standardized pattern within your UML diagrams. It's akin to creating a new "type" of class within your modeling language.
 - **Property Approach**: This is more informal and flexible. It's useful for adding notes or metadata without the need to define new stereotypes.
+
+Learned Notes for UML improvement:
+- Domain model
+- Low visual noise - only relationships that have memory
+- Do not use "has" and "uses", these are poor
+	- ClassName-verb-className
+- Aggregations are pointless?
+- Domain modeling is not focused on attributes as complex class types, but rather primitive types
+
 
 
 

@@ -1,1 +1,39 @@
-- [ ] Visualize static cast operation
+- [x] Complete total class diagram
+	- [ ] Do we want notes?
+	- [x] Do we want a package for the src code in the battle system
+	- [x] What is the compare to function
+	- [x] Do we need inheritance in there for exceptions and runnable
+- [x] change battle to 1 to many
+- [x] shorten names
+- [x] table the attributes names of pokemon
+- [x] compareTo do we want rely on the pokemon to sort register their skills in order
+- [ ] remove exception
+- [ ] potentially rename seed
+- [ ] Commenting...in line comments...do we need them?
+	- [ ] Drift
+- [x] Do we want to divide anything into subfolders
+- [x] Getters and setters may be ommitted to save space
+- [x] Do our getters and setters directly match associated attribute
+- [x] Do we need a setSeed()?
+- [x] Are we sorting the pokemon stuff?
+- [x] Protect reduces up to 3?
+- [x] initialize is protected
+- [x] start return void
+- [x] PokemonStatus
+- [x] Change PokemonGameUI to CommandProcessor
+- [x] Name of variables on defense and offense skill
+- [ ] getSimpleName why is it full name?
+- [x] CompareTo methodte of the class
+- [x] Seed is protected
+- [x] int in PokemonGame
+- [x] Set seed to random
+- [x] Dont store battle as an attribute
+- [x] dependency for battle
+- [x] getters in Offensive and DefensiveSkill
+- [ ] TODO comments
+- [ ] Opponent battle method
+- [ ] try catches in battle method
+- [ ] Submit submission for assignment tomorrow
+- [x] Fix pokemon status class
+- [x] rename offensive level?
+- [ ] Hard coded strings
