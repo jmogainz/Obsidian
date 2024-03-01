@@ -91,7 +91,15 @@
 
 ],
 
-"additionalSOLibSearchPath": "/home/jmoore2/i2dev/remote/reinforcementlearning/deps/reinforcementlearningsimulator/install/lib/"
+"additionalSOLibSearchPath": "/home/jmoore2/i2dev/remote/reinforcementlearning/install/lib/",
+
+"logging": {
+
+"moduleLoad": true,
+
+"engineLogging": true
+
+}
 
 },
 

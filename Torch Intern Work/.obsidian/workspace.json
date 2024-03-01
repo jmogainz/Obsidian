@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guardian/Data Gen Notes.md",
+                "file": "Guardian/Data Gen Code Layout C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Guardian/Data Gen Notes.md",
+                "file": "Guardian/Data Gen Code Layout C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,10 +126,10 @@
   },
   "active": "4dde804356dd290f",
   "lastOpenFiles": [
-    "Guardian/New Shutdown.md",
-    "Guardian/Data Gen Notes.md",
-    "Guardian/Data Gen Code Layout C++.md",
     "Guardian/Code Changes, Detailed.md",
+    "Guardian/Data Gen Code Layout C++.md",
+    "Guardian/Data Gen Notes.md",
+    "Guardian/New Shutdown.md",
     "Guardian_DL/DL Classification.md",
     "Guardian_ML/GB.md",
     "Guardian_ML/KNN.md",

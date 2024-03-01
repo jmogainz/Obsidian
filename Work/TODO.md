@@ -44,27 +44,27 @@
 - [x] refactor into smaller functions
 - [x] create callbacks at observationhandler initialization
 - [x] Add start param to multidiscrete
-- [ ] consider manager history count
+- [x] consider manager history count
 - [x] Figure out compiler warning bombs (xtensor, pybind11, boost)
-- [ ] Remove long long int....change uot for uint16
-- [ ] Tell daniel about  problem with vscode debugger?
-	- [ ] vscode debugger appears to be ignoring the runpath completely on all my wrapper modules (so finding incorrect libstdc++ so)
+- [x] Remove long long int....change uot for uint16
+- [x] Tell daniel about  problem with vscode debugger?
+	- [x] vscode debugger appears to be ignoring the runpath completely on all my wrapper modules (so finding incorrect libstdc++ so)
 - [x] Add dynamic loading of IObservationHandlers
-- [ ] Add dynamic loading for handlers and thus extractors
+- [ ] Add dynamic loading for extractors
 - [x] REFACTOR 
 	- [x] Validate sensors fuction can split up?
-- [ ] Verify working on linux service allocator
+- [x] Verify working on linux service allocator
 - [x] Check with potentially using better naming to differentiate between configuration and simulation
-- [ ] Check with potentially not making sensordataobserver inherited from platform data observer
-- [ ] Make instruction an optional field in space params
+- [x] Check with potentially not making sensordataobserver inherited from platform data observer
+- [x] Make instruction an optional field in space params
 - [x] Change namespace of new library for observations with grammar
 - [x] Track repo reading is threadsafe (locks on all read functions as well as modification functions)
 - [x] Need locks on my maps
 - [x] Make sure sam sorted the track_ids based on numeric
 - [ ] Take off I on factory for interface factories
 - [x] Could potentially make factory cpp implemented
-- [ ] Think about each layer of observation forming and making the sure the repos are not updated during....
-- [ ] Consider storing snapshot of history up front when get observation sample so there is duplicate calls or changing results to getHIstory for platforms and sensors
+- [x] Think about each layer of observation forming and making the sure the repos are not updated during....
+- [x] Consider storing snapshot of history up front when get observation sample so there is duplicate calls or changing results to getHIstory for platforms and sensors
 - [ ] Move all factories to cpp
 - [ ] Reduce header size as much as possible
 - [ ] Custom exception handling
@@ -73,7 +73,7 @@
 	- [x] Update extractors to use new stuff
 	- [ ] Fix namespace for grammarbased?
 - [x] Find a better place to put enum to string conversion
-- [ ] Add sorting for track_ids
+- [x] Add sorting for track_ids
 - [x] Few pr in codem
 - [ ] Possibly hide c++ gym space constructors
 - [x] Fix observation testing to be more legit
@@ -82,14 +82,48 @@
 - [x] See if daniel got paid out
 - [ ] Comment header file methods
 - [x] View payroll checks and make sure they look good
-- [ ] IDataExtractorTests
-- [ ] Config File Builder Tests
-- [ ] ObservationDataRepo tests
-- [x] GrammarInstructionParsingTests
-- [ ] GetObservation Full Tests
-- [ ] Add structs to uml
+- [ ] IDataExtractor tests
+	- [ ] Config File Builder Tests
+	- [ ] ObservationDataRepo tests
+	- [x] GrammarInstructionParsingTests
+	- [ ] GetObservation Full Tests
+	- [ ] Write tests for the functionality of the full observation lib
+- [ ] Add ODR structs to uml
 - [ ] Gov trainings
 - [ ] Goals and crap in deltek
-- [ ] Prepare for CRAP hosting
-- [ ] Build afsim with matts plugin and try to run pipeline again
-- [ ] 
+- [x] Build afsim with matts plugin and try to run pipeline again
+- [ ] Ask Daniel and Jeremy where they would put custom exceptions
+- [x] Test afsim to watch and see how many samples are recorded by plugin
+- [x] Change name on action handler libs from shared extension
+- [ ] lib and _d refactoring
+- [ ] consider setting the frame time somewhere in some configuration file so that you dont have to remember where to set it all the time
+- [x] Reduce code duplication in extractors
+- [x] Figure out what to do with the observation
+- [x] Figure out why there are no tracks being recorded
+- [ ] Ask daniel about what the released by toolbox means and why it seems that afsim keeps going even though toolbox was supposed to be holding it back
+- [x] Refactor observation dimension display into utils
+- [x] Check where afsimscripts is coming from
+- [ ] Ask daniel about track names and if we can get a dis to platform name conversion singleton going....
+- [ ] Sensor limits sending is not set up right now, ReceiveSensorLimitsRequest
+- [x] Build track correlator
+- [ ] Rename to sampling params?
+- [ ] Decompose extractors into shared functionality
+- [x] extrapolate back in time or assume that it was just dropped
+- [x] Increase performance
+- [x] GRAMMAR update for no sampling
+- [x] Change track1 to updated twice no dropped
+- [ ] Move extractors into their own library? At some point?
+- [ ] Refactor extractor context so that it will be inheritance based and then the grammar can create just a shared struct that has everything you would ever need in it?
+	- [ ] Then the struct params would be conditionally selected to build the necessary abstract class implementation?
+- [ ] MAKE SLIDESHOW!!!!!
+- [x] 146 on P3L
+
+#### Next
+- [ ] Consider what to do for entire scenario history !!!!!!!!!!!!!!
+	- [ ] GET ALL RECENT SAMPLES
+	- [ ] Loop on interval until no more samples
+- [ ] Platform time-based extraction and tests
+- [ ] Get system up and running again with latest changes
+- [ ] Write comprehensive tests for full observation lib
+- [x] Expand trackcorrelator functionality
+	- [ ] Write tests for expanded functionality

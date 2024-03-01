@@ -13,13 +13,7 @@
 
 ],
 
-"defines": [
-
-"USE_ONNX_RUNTIME",
-
-"USE_YAML_CPP"
-
-],
+"defines": [],
 
 "cStandard": "c17",
 
