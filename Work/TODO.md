@@ -115,15 +115,33 @@
 - [ ] Move extractors into their own library? At some point?
 - [ ] Refactor extractor context so that it will be inheritance based and then the grammar can create just a shared struct that has everything you would ever need in it?
 	- [ ] Then the struct params would be conditionally selected to build the necessary abstract class implementation?
-- [ ] MAKE SLIDESHOW!!!!!
+- [x] MAKE SLIDESHOW!!!!!
 - [x] 146 on P3L
 
 #### Next
-- [ ] Consider what to do for entire scenario history !!!!!!!!!!!!!!
-	- [ ] GET ALL RECENT SAMPLES
-	- [ ] Loop on interval until no more samples
-- [ ] Platform time-based extraction and tests
-- [ ] Get system up and running again with latest changes
+- [x] Consider what to do for entire scenario history !!!!!!!!!!!!!!
+	- [x] GET ALL RECENT SAMPLES
+	- [x] Loop on interval until no more samples
+- [x] Platform time-based extraction and tests
+- [x] CHECK USE COUNT OF POSITION REPO FOR SENSORS BEFORE RESET OF POSITION MANAGER
+- [x] Get system up and running again with latest changes
 - [ ] Write comprehensive tests for full observation lib
 - [x] Expand trackcorrelator functionality
 	- [ ] Write tests for expanded functionality
+- [ ] If we need more speed we could intercept the sensor track message in the observation data repository
+- [ ] Consider padding values for extractors
+- [ ] Reset thing for the waitForBarrier
+- [ ] Use toolbox_sensor_observer config?
+- [ ] TRY TO USE SAME VEHICLE NAMES IN CONFIG OF PLUGIN
+
+ENSURE WHEN PLATFORM GETS TELEPORTED, that we catch the target undetected on update and even though a detection attempt was never made to go in and force the call to drop tracks?
+
+Add to UML
+- [ ] observation
+- [ ] action
+- [ ] rewards
+- [ ] dataextraction
+- [ ] environments
+	- [ ] connects to toolbox service classes
+
+AFSIM_INSTALL_VERSIONS
