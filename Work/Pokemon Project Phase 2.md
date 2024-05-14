@@ -1,0 +1,15 @@
+- [ ] What would happen if both pokemon names were invalid #825
+- [ ] should we change to displayInfo for code consistency and then just include both alternatives in our Alt dynamically loadable interface
+	- [ ] #900
+- [ ] Sequence diagram just for tournament and display info only?
+- [ ] Error in state diagram
+- [ ] Should we take 'hidden pokemon' out of class diagram
+	- [ ] ![[Pasted image 20240317142014.png]]
+- [ ] State diagram checks
+	- [ ] https://www.omg.org/spec/UML/2.5.1/PDF
+	- [ ] 319
+- [ ] Can the same pokemon battle in a tournament or battle #872
+- [ ] ![[Pasted image 20240317142555.png]]
+- [ ] Are we covering flow matthew detailed in #903
+- [ ] ![[Pasted image 20240317143553.png]]
+	- [ ] #943
