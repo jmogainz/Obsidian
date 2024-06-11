@@ -1,6 +1,6 @@
-<b>Merge with:</b>
+j**Merge with:**
 1. ph
 
-<b>Changes:</b>
+**Changes:**
 - ph
 - ph
