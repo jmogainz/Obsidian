@@ -4,3 +4,6 @@
 - [ ] Fix clairvoyanttrackwriter json field in commandlinetestdriver? The name is wrong on it
 - [ ] Catch errors in python calls through c++ wrappers to handle and shutdown the pipeline
 - [ ] Apply clairvoyant sensor data observer filter to sensor limits
+- [ ] Make sure that inMemory is checked on the register mapping to determine if we need to load into temp register or not
+- [ ] Test with multiple files to check assembly output and see if it works and looks right
+- [ ] Implement tests for code generation and make sure output matches that which was interpreted
