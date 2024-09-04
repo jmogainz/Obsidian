@@ -1,4 +1,4 @@
-- [ ] Move extractioninstructionparser to its own lib
+- [x] Move extractioninstructionparser to its own lib
 - [ ] Extraction instruction grammar documentation
 - [ ] Design data recorder
 - [ ] Fix clairvoyanttrackwriter json field in commandlinetestdriver? The name is wrong on it
@@ -7,3 +7,12 @@
 - [ ] Make sure that inMemory is checked on the register mapping to determine if we need to load into temp register or not
 - [ ] Test with multiple files to check assembly output and see if it works and looks right
 - [ ] Implement tests for code generation and make sure output matches that which was interpreted
+- [ ] Pull safeSet into its library
+
+
+**Pressing**
+- [ ] Should we duplicate the flatbuffers dependency
+- [ ] Potentially hyperlink uml diagrams
+- [x] Look over data recorder library code to ensure everything looks right
+- [x] Consider what daniel says about recursive variant potentially being a better option
+- [ ] Get rid of 'schema' and other flatbuffer related language from datarecorder library

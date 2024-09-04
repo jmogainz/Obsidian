@@ -1,3 +1,5 @@
 BBDC-MjQ2OTg3MzY2ODk2OgccQpSyh8XdaqEGeaty28MSXo6F
 
-"set(CMAKE_C_COMPILER /opt/msvc/bin/x64/cl) set(CMAKE_CXX_COMPILER /opt/msvc/bin/x64/cl) macro(CMAKE_FORCE_C_COMPILER compiler compiler_id) set(CMAKE_C_COMPILER ${compiler} CACHE FILEPATH "C compiler" FORCE) set(CMAKE_C_COMPILER_ID ${compiler_id} CACHE STRING "C compiler id" FORCE) endmacro() macro(CMAKE_FORCE_CXX_COMPILER compiler compiler_id) set(CMAKE_CXX_COMPILER ${compiler} CACHE FILEPATH "CXX compiler" FORCE) set(CMAKE_CXX_COMPILER_ID ${compiler_id} CACHE STRING "CXX compiler id" FORCE) endmacro() CMAKE_FORCE_C_COMPILER(/opt/msvc/bin/x64/cl MSVC) CMAKE_FORCE_CXX_COMPILER(/opt/msvc/bin/x64/cl MSVC)"
+
+
+

@@ -1,0 +1,1 @@
+Okay so lets extend my main entry point to my compiler to support the new command line option reqs (I have only updated the usage log at the beginning for them: -r, -n, -g, -c, -v) 
