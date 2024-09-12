@@ -1,0 +1,14 @@
+- Decide on 'grammar' or 'instructions', but not both for library and class names. I think 'grammar' is clearer as it ties with boost grammar. 
+	- This would be ultimately to define a recursive structure object that contains multipe grammar instructions inside of it corresponding to 
+- Create "rewardcalculator" library and move 'multicalculators' and 'singlecalculators' out of 'rewards' library.  This should mirror the 'dataextraction' library. Including the "RewardCalculatorFactory", "RewardCalculatorType", "DataRewardContext" in the 'rewardcalculator' library.
+- Create 'rewardcalculatorinstructionparser' library that mirrors the 'dataextractioninstructionparser' library. 
+- Create 'rewardcalculatortreebasedparser' library that mirrors the 'dataextractioninstructionparser' library.
+- Move 'RewardCalculationParser.cpp" from 'grammarbasedrewards' to 'rewardcalculatorinstructionparser' library. 
+- Move "RewardInfoNodeParser" from the 'rewards' library to 'rewardcalculatortreebasedparser' library and rename to tree-based.
+- Reduce code in 'rewards" library. Not sure what this means yet.
+- Rename 'yamlbasedrewards' to 'rewardstreebased'.
+- Rename 'grammarbasedrewards' to 'rewardsgrammarbased'. 
+- Rename 'grammarbasedobservations' to 'observationsgrammarbased'. 
+- Rename 'sensorlaydownactions' to 'actionssensoremplacement'. 
+- Ensure interfaces classes have minimal functionality. 
+

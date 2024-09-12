@@ -16,3 +16,6 @@
 - [x] Look over data recorder library code to ensure everything looks right
 - [x] Consider what daniel says about recursive variant potentially being a better option
 - [ ] Get rid of 'schema' and other flatbuffer related language from datarecorder library
+
+
+Overloaded function support for lua plugin c++
