@@ -1,0 +1,5 @@
+- is the library on the system in a typical system path?
+- Is the library on the system symlinked down to no version on the end?
+- we actually saw some cmake caching behavior that interfered with the linker search path for libstdc++
+- is the library a direct dependency or a dependency of another direct dependency? Rpath of all libraries is relevant
+- 

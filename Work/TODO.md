@@ -19,3 +19,5 @@
 
 
 Overloaded function support for lua plugin c++
+Jeremy uh oh. We need that path to go into the rpath of the resulting libs and execs
+
