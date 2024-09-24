@@ -1,6 +1,10 @@
 - make sure rp_filter is not 2 or 1 for the interfaces
-- make sure ip_tables has a postrouting ruleset so that nat can take place
 - make sure that ipv4 forwarding for all interfaces is set
+#### PRIMARY PROBLEM:
+- make sure ip_tables has a postrouting ruleset so that nat can take place
+	- make sure ip address of guest is correct
+	- make sure interface is spelled correctly
+	- RESTART iptables daemon
   
   Helpful tutorial (be sure to include tpm though for windows11)
   https://www.youtube.com/watch?v=Zei8i9CpAn0

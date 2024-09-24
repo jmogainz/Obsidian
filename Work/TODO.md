@@ -17,7 +17,7 @@
 - [x] Consider what daniel says about recursive variant potentially being a better option
 - [ ] Get rid of 'schema' and other flatbuffer related language from datarecorder library
 
-
+WHY ARE THERE TWO LOGS COMING FROM PYTHON
 Overloaded function support for lua plugin c++
 Jeremy uh oh. We need that path to go into the rpath of the resulting libs and execs
 

@@ -1,0 +1,1 @@
+Trying to clone but '+' in name of folder inside repo no good with git and virtiofs shared folder. (git status and git clone not work)
