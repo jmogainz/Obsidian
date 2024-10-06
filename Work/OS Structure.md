@@ -1,0 +1,23 @@
+- What is a library os?
+- Why does it seem like my professor is using SPIN and ExoKernel OS architectures as some sort of a hypervisor....like extensions/library os
+- Why is it called exokernel?
+- What is exokernel PE data structure?
+- What is program discontinuity?
+- How is DOS-like os setup in comparions?
+- How is monolithic setup in comparison?
+- How is microkernel setup in comparison?
+- How is SPIN setup in comparions?
+- What are the explicit/implicit costs of mkernel design?
+- Why does portability design consideration in mach microkernel design have ramifications on performance, whereas l3 could get around this?
+- Abstraction! OS abstract all the way from a transistor! Check the image I screenshotted
+- CPU Scheduling and Memory management services in each exokernel and SPIN
+- L3 improvements over regular mk, TLB PID addressing (TLB flush is huge expense), share hardware resources, segment registers (may HAVE to TLB flush...depending on size of protection domain)
+	- implicit: memory locality because of context switch (cache effects as result of flushing TLB is DOMINANT), explicit: border crossing, address space switch, IPC, user-mode kernel switch, thread switching
+- Using segment registers, how does a border crossing across protection domains (virtual address spaces) occur? In a microkernel, dont you have to switch from user to kernel mode, and then the kernel switches back to user mode but into another protection domain that it is aware of? Like you cannot actually switch
+- What are warm caches? How does this effect the ability for microkernels to perform as well as monolithic or SPIN or exokernel? Has to do with SMALL PROTECTION DOMAINS?
+- Mach has lots of code bloat for portability (large memory footprint) -> which means less locality -> which means more cache misses ---> LONGER LATENCY FOR BORDER CROSSING
+- So mach just sucks....nothing wrong with microkernel...
+- L3 should have:
+	- minimal abstractions: uid, threads, ipc, address space
+	- processor-specific in impl, non-portable
+	- needs processor independent abstractions in order to meet monolithic

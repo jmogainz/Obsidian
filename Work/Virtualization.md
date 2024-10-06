@@ -1,0 +1,8 @@
+- logical progression of the concept of extensibility
+- how does the hypervisor technically speaking actually allow a guest os to think its on a regular bare metal os? How does the guest os execute instructions on the cpu but yet it does not bc the hypervisor intercepts it?
+	- trap? intercepted?
+- memory sharing guest vs non-guest? hashing? vmware? pure share, working-set, dynamic idle-adjusted shares approach, reclaim most idel memory
+- data transer full vs para
+	- xen does some complex stuff with request cons-prod, response cons-prod (io rings?)
+-  resource recording
+- vmware vs xen, cpu vs memory processes

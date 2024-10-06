@@ -21,3 +21,4 @@ WHY ARE THERE TWO LOGS COMING FROM PYTHON
 Overloaded function support for lua plugin c++
 Jeremy uh oh. We need that path to go into the rpath of the resulting libs and execs
 
+- Look into csum_ipv6_magic, and try to find the same performance problem that Eric and Linus were talking about here: https://lkml.org/lkml/2024/1/6/180
