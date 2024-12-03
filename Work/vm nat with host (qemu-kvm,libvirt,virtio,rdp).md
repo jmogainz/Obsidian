@@ -4,7 +4,8 @@
 - make sure ip_tables has a postrouting ruleset so that nat can take place
 	- make sure ip address of guest is correct
 	- make sure interface is spelled correctly
-	- RESTART iptables daemon
+	- RESTART iptables daemon if no connection still and iptables are correct
+	- sudo iptables -t nat -L POSTROUTING -n -v
   
   Helpful tutorial (be sure to include tpm though for windows11)
   https://www.youtube.com/watch?v=Zei8i9CpAn0
