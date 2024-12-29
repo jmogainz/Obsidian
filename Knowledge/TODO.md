@@ -31,4 +31,10 @@ Add tensorboard log to models
 Add annotated types to models
 
 
-CHANGE CWD IN TESTS
+HERE:
+we need code improvements on auth (in apple notes)
+	- endpoints that strictly check if the email or phone number exist (registered with a user profile already, two separate end points).....this should use code that is reusable by the login enpoints as they need to perform similar logic to check if the username exist. 
+	- additionally we need full web abilities as well for requests that come from the web app version of the app
+	- 
+containerize dev environment
+
