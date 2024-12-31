@@ -1,0 +1,1 @@
+What happens when I need to scale on fly...how does that effect the pricing, dynamic scale.

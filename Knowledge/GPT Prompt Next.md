@@ -1,0 +1,1 @@
+Okay this is great, can you now add my feature for register/worker and register/property_manager based on schema information for each that needs to be populated? The schemas are already in place for this.
