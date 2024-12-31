@@ -7,10 +7,12 @@ File tree:
 .
 ├── cmd
 │   └── main.go
+├── codebase_content.txt
 ├── config
 │   └── config.go
 ├── docker-compose.yml
 ├── Dockerfile
+├── Dockerfile.migrate
 ├── fly.toml
 ├── go.mod
 ├── go.sum
@@ -42,6 +44,7 @@ File tree:
 │   │   └── sms_service_test.go
 │   └── utils
 │       └── totp.go
+├── Makefile
 ├── migrations
 │   ├── 000001_initial.up.sql
 │   └── README.md
@@ -49,27 +52,95 @@ File tree:
 └── scripts
     └── migrate.sh
 
-12 directories, 32 files
-
+12 directories, 35 files
 
 File contents:
 
 ## .env
 
-AUTH_SERVICE_URL=
-DATABASE_URL=
-DB_ENCRYPTION_KEY=
-TWILIO_ACCOUNT_SID=
-TWILIO_AUTH_TOKEN=
-TWILIO_FROM_PHONE=
-SENDGRID_API_KEY=
-SENDGRID_FROM_EMAIL=
-RSA_PRIVATE_KEY="-----START PRIVATE KEY-----
------END PRIVATE KEY-----"
-RSA_PUBLIC_KEY="-----START PUBLIC KEY-----
------END PUBLIC KEY-----"
-TEST_EMAIL=
-TEST_PHONE_NUMBER=
+## Makefile
+
+# Makefile
+
+.PHONY: build up migrate integration-test unit-test down ci clean ssh-setup
+
+## 1) SSH Setup: Start agent & add all keys from ~/.ssh
+ssh-setup:
+	@if [ -z "$$SSH_AUTH_SOCK" ]; then \
+	  echo "[SSH Setup] No SSH agent found. Starting one..."; \
+	  eval `ssh-agent -s`; \
+	  echo "[SSH Setup] Adding all private keys from ~/.ssh..."; \
+	  for key in $$(ls ~/.ssh/id_* 2>/dev/null || true); do \
+	    if [ -f $$key ]; then \
+	      echo "   -> Adding key: $$key"; \
+	      ssh-add $$key >/dev/null 2>&1 || true; \
+	    fi; \
+	  done; \
+	else \
+	  echo "[SSH Setup] SSH agent already running at $$SSH_AUTH_SOCK"; \
+	fi
+
+## 2) Build all Docker images, passing the SSH key automatically
+build: ssh-setup
+	@echo "[Build] Using BuildKit SSH forwarding..."
+	COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 \
+	docker-compose build --ssh default
+
+## Start db + auth in the background
+up:
+	docker-compose up -d db poof-back-auth
+
+## Run migrations in a one-off container
+migrate:
+	docker-compose run --rm migrate
+
+## Run unit tests inside the "unit-tests" container
+unit-test:
+	docker-compose run --rm poof-back-auth-unit-tests
+
+## Run integration tests (depends on poof-back-auth: healthy)
+integration-test:
+	docker-compose run --rm poof-back-auth-test
+
+## Shut down all containers
+down:
+	docker-compose down
+
+## Clean everything so next build is totally fresh
+clean:
+	@echo "Cleaning up Docker containers, images, volumes, and networks for this Compose project..."
+	docker-compose down --rmi local -v --remove-orphans
+	@echo "Cleanup complete. Next build will be from scratch for THIS project."
+
+## CI pipeline: build -> up -> migrate -> unit-test -> integration-test -> down
+ci: build
+	@echo "[CI] Starting CI pipeline..."
+	$(MAKE) up
+	$(MAKE) migrate
+	$(MAKE) unit-test
+	$(MAKE) integration-test
+	$(MAKE) down
+	@echo "[CI] Pipeline complete."
+
+
+## Dockerfile.migrate
+
+FROM alpine:latest
+
+# Install the migrate CLI 
+# (or you can copy from a builder stage if you want).
+RUN apk add --no-cache ca-certificates bash \
+    && apk add --no-cache curl \
+    && wget https://github.com/golang-migrate/migrate/releases/download/v4.16.2/migrate.linux-amd64.tar.gz \
+    && tar xvf migrate.linux-amd64.tar.gz -C /usr/local/bin \
+    && rm migrate.linux-amd64.tar.gz
+
+WORKDIR /app
+COPY scripts/migrate.sh scripts/migrate.sh
+COPY migrations/ migrations/
+
+RUN chmod +x scripts/migrate.sh
+CMD ["./scripts/migrate.sh", "up"]
 
 
 ## fly.toml
@@ -121,9 +192,10 @@ install/
 
 ## docker-compose.yml
 
-version: '3.8'
-
 services:
+  # ----------------------
+  # 1) Postgres DB
+  # ----------------------
   db:
     image: postgres:13
     container_name: poof_auth_db
@@ -136,15 +208,75 @@ services:
     ports:
       - "5432:5432"
 
+  # ----------------------
+  # 2) Auth Service
+  # ----------------------
   poof-back-auth:
     build: .
     container_name: poof_back_auth
     env_file:
-      - .env  # Load environment variables from .env file
+      - .env
+    # The line below ensures that from inside the container,
+    # any references to `AUTH_SERVICE_URL` are set to
+    # http://poof-back-auth:8082 (Docker's internal network)
     ports:
       - "8082:8082"
     depends_on:
       - db
+    # Healthcheck so other containers can wait until it's truly ready
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8082/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+
+  # ----------------------
+  # 3) Migration Container
+  # ----------------------
+  # This re-uses the same Docker build context, so it has
+  # the code + scripts available. We override the command to run migrations.
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.migrate
+    container_name: poof_back_auth_migrate
+    depends_on:
+      - db
+    env_file:
+      - .env
+
+  # ----------------------
+  # 4) Integration Test Container
+  # ----------------------
+  # Runs your integration tests, pointing to 'poof-back-auth' service.
+  poof-back-auth-test:
+    build: .
+    container_name: poof_back_auth_test
+    depends_on:
+      poof-back-auth:
+        condition: service_healthy
+    env_file:
+      - .env
+    command: sh -c "
+      echo '[Integration Tests] Running against poof-back-auth...' &&
+      go test -v ./internal/integration_test/... &&
+      echo 'Integration tests finished successfully.'"
+
+  # ----------------------
+  # 5) Optional: Unit Test Container
+  # ----------------------
+  # In case you want to run short (unit) tests inside Docker as well.
+  poof-back-auth-unit-tests:
+    build: .
+    container_name: poof_back_auth_unit_tests
+    depends_on:
+      - db
+    env_file:
+      - .env
+    command: sh -c "
+      echo '[Unit Tests] Running...' &&
+      go test -v ./internal/... -short &&
+      echo 'Unit tests finished.'"
 
 volumes:
   pgdata:
@@ -153,35 +285,46 @@ volumes:
 
 ## Dockerfile
 
-# poof-back-auth/Dockerfile
+# syntax=docker/dockerfile:1.4
 
-# Build stage
-FROM golang:1.19-alpine AS builder
+# ---------------------------------
+# Stage 1: Build
+# ---------------------------------
+FROM golang:1.23-alpine AS builder
+
+# 1) Install git + openssh for private repo access
+RUN apk update && apk add --no-cache git openssh
+
+ENV GOPRIVATE=github.com/poofdev/*
+RUN git config --global url."git@github.com:".insteadOf "https://github.com/"
 
 WORKDIR /app
 
-# Copy the Go modules files and download dependencies
-COPY go.mod go.sum ./
-RUN go mod download
+RUN mkdir -p /root/.ssh \
+ && ssh-keyscan github.com >> /root/.ssh/known_hosts \
+ && chmod 644 /root/.ssh/known_hosts
 
-# Copy the source code
+# Copy just go.mod and go.sum first for caching
+COPY go.mod go.sum ./
+
+# 3) Use BuildKit SSH mount to fetch private modules
+RUN --mount=type=ssh go mod download
+
+# Copy the rest of your source code
 COPY . .
 
-# Build the Go application
+# Build the app
 RUN go build -o /poof-back-auth ./cmd/main.go
 
-# Final stage
+# ---------------------------------
+# Stage 2: Final minimal image
+# ---------------------------------
 FROM alpine:latest
 
-# Set working directory
 WORKDIR /root/
-
-# Copy the binary from the build stage
 COPY --from=builder /poof-back-auth .
 
-# Expose the service port
 EXPOSE 8082
-
 CMD ["./poof-back-auth"]
 
 
@@ -226,25 +369,41 @@ type OpenIDProviderConfig struct {
 }
 
 func LoadConfig() *Config {
-	privateKeyPEM := []byte(os.Getenv("RSA_PRIVATE_KEY"))
-	block, _ := pem.Decode(privateKeyPEM)
-	if block == nil {
-		log.Fatal("Failed to decode PEM block containing the private key")
-	}
-	privateKey, err := jwt.ParseRSAPrivateKeyFromPEM(privateKeyPEM)
-	if err != nil {
-		log.Fatal("Failed to parse RSA private key:", err)
-	}
+	privateKeyBase64 := os.Getenv("RSA_PRIVATE_KEY_BASE64")
+    if privateKeyBase64 == "" {
+        log.Fatal("RSA_PRIVATE_KEY_BASE64 not set")
+    }
+    // 1) Decode from base64
+    privateKeyPEM, err := base64.StdEncoding.DecodeString(privateKeyBase64)
+    if err != nil {
+        log.Fatalf("Failed to decode base64 private key: %v", err)
+    }
+    // 2) Parse the PEM block
+    block, _ := pem.Decode(privateKeyPEM)
+    if block == nil {
+        log.Fatal("Failed to decode PEM block for private key")
+    }
+    privateKey, err := jwt.ParseRSAPrivateKeyFromPEM(privateKeyPEM)
+    if err != nil {
+        log.Fatalf("Failed to parse RSA private key: %v", err)
+    }
 
-	publicKeyPEM := []byte(os.Getenv("RSA_PUBLIC_KEY"))
-	block, _ = pem.Decode(publicKeyPEM)
-	if block == nil {
-		log.Fatal("Failed to parse PEM block containing public key")
-	}
-	publicKey, err := jwt.ParseRSAPublicKeyFromPEM(block.Bytes)
-	if err != nil {
-		log.Fatal("Failed to parse RSA public key:", err)
-	}
+    publicKeyBase64 := os.Getenv("RSA_PUBLIC_KEY_BASE64")
+    if publicKeyBase64 == "" {
+        log.Fatal("RSA_PUBLIC_KEY_BASE64 not set")
+    }
+    publicKeyPEM, err := base64.StdEncoding.DecodeString(publicKeyBase64)
+    if err != nil {
+        log.Fatalf("Failed to decode base64 public key: %v", err)
+    }
+    block, _ = pem.Decode(publicKeyPEM)
+    if block == nil {
+        log.Fatal("Failed to decode PEM block for public key")
+    }
+    publicKey, err := jwt.ParseRSAPublicKeyFromPEM(block.Bytes)
+    if err != nil {
+        log.Fatalf("Failed to parse RSA public key: %v", err)
+    }
 
 	dbEncryptionKey := os.Getenv("DB_ENCRYPTION_KEY")
 	if dbEncryptionKey == "" {
@@ -287,9 +446,29 @@ func LoadConfig() *Config {
 ## scripts/migrate.sh
 
 #!/bin/bash
+set -e
 
-DATABASE_URL=${DATABASE_URL:-"postgres://auth_user:auth_pass@localhost:5432/auth_db?sslmode=disable"}
+# 1) Ensure DATABASE_URL is set
+if [ -z "$DATABASE_URL" ]; then
+  echo "[ERROR] DATABASE_URL is not set. Please export a valid Postgres connection string."
+  exit 1
+fi
+
+# 2) Check that it looks like a PostgreSQL URL
+#    (Naive check: just ensures it starts with postgres:// or postgresql://)
+if ! [[ "$DATABASE_URL" =~ ^postgres(ql)?:// ]]; then
+  echo "[ERROR] DATABASE_URL doesn’t appear to be a valid PostgreSQL address: $DATABASE_URL"
+  exit 1
+fi
+
+# 3) Run migrate with the provided arguments ($@)
 migrate -database "$DATABASE_URL" -path ./migrations "$@"
+
+
+
+## scripts/.git
+
+gitdir: ../../.git/modules/poof-back-auth/modules/scripts
 
 
 ## internal/utils/totp.go
@@ -2172,6 +2351,17 @@ CREATE TABLE login_attempts (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
+
+## migrations/README.md
+
+# Poof Migrations for use as submodule, early stage SOA, single db.
+
+
+## migrations/.git
+
+gitdir: ../../.git/modules/poof-back-auth/modules/migrations
+
+
 --------------------------------------------------------
 #### Middleware Package ######
 
@@ -3255,4 +3445,6 @@ func (r *tokenRepository) IsTokenBlacklisted(ctx context.Context, tokenID string
 }
 
 
-Okay analyze and process doing a comprehensive scan for any bugs or anything that could potentially cause our integration tests to fail. 
+Okay analyze and process why my docker container for my auth service appears to be failing at the following error:
+▷ docker logs poof_back_auth
+2024/12/29 22:00:49 Failed to decode PEM block containing the private key

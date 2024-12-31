@@ -1,0 +1,1 @@
+DNF install openssh-server
