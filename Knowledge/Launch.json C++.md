@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -22,42 +19,37 @@
             "args": "${command:pickArgs}"
         },
         {
-        "name": "gdb Debug",
-        
-        "type": "cppdbg",
-        
-        "request": "launch",
-        
-        "program": "/home/jmoore2/i2dev/remote/ai-reinforcementlearning/deps/rlsim/build/deps/UtilCpp/src/libs/datarecorder/tests/datarecorder_tests",
-        
-        "args": [],
-        
-        "stopAtEntry": false,
-        
-        "cwd": "${workspaceFolder}",
-        
-        "environment": [],
-        
-        "externalConsole": false,
-        
-        "MIMode": "gdb",
-        
-        "setupCommands": [
-        
+            "name": "Python: pytest",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "--maxfail=3",
+                "--disable-warnings",
+                "--verbose",
+                "${workspaceFolder}/"
+            ],
+            "justMyCode": false,
+        },
         {
-        
-        "description": "Enable pretty-printing for gdb",
-        
-        "text": "-enable-pretty-printing",
-        
-        "ignoreFailures": true
-        
-        }
-        
-        ],
-        
-        "miDebuggerPath": "/usr/bin/gdb",
-        
+            "name": "gdb Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "Uninitialized",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb",
         },
         {
             "name": "Linux C++ Attach to Python",
@@ -65,7 +57,7 @@
             "request": "attach",
             "processId": "${command:pickProcess}",
             "MIMode": "gdb",
-            "program": "/home/jmoore2/i2dev/remote/ai-reinforcementlearning/.venv/bin/python",
+            "program": "Uninitialized",
             "miDebuggerPath": "/usr/bin/gdb",
             "setupCommands": [
               {
