@@ -60,3 +60,6 @@ RESUME
 Temp promt:
 
 I work for a startup company where I am a founder and the CTO. This is a tech company, and the lead developer. How would you suggest that I can include this work that I do for this in some way on my resume that is ethical...as this is an active/recognized corporation in any way yet. Perhaps this may not matter, but I am wondering what is the recommended way to include this in some way on my resume as I am still working full time, and our startup is in primarily development phase for now, and we keep the idea the company purpose private to the founders until we hit launch. But in the meantime I am trying to move full time jobs and think the experience with the company would benefit my resume greatly.
+
+
+Look up what ca disable minimum frame duration on iphone
