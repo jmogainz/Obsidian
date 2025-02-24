@@ -1,1 +1,0 @@
-make sure all the paths are relative to a root project in python
